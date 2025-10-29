@@ -78,7 +78,7 @@ These first questions involve making callbacks for higher-order functions.
 ### Question 1: logEachValue — forEach
 Given an array of values, you must print each value next to it's index in a single string like: `Value: [VALUE], index: [INDEX].`
 
-`forEach` is the best choice here because we want to execute a side-effect (printing) for every single value in the array
+`foEach`r is the best choice here because we want to execute a side-effect (printing) for every single value in the array
 
 **Usage Example:**  
 ```js
