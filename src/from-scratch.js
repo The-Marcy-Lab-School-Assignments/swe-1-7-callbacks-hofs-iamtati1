@@ -9,10 +9,9 @@ const makePeopleHappy = (people) => {
   people.forEach((person) => person.isHappy = true)
 }
 people = [
-  { name: "Alice", isHappy: false },
-  { name: "Bob", isHappy: false }
+  { name: "Alice", isHappy: true },
+  { name: "Bob", isHappy: true }
 ];
-passThemOut(people)
 console.log(people);
 //Problem: 2
 const getEvenNumbers = (numbers) => {
