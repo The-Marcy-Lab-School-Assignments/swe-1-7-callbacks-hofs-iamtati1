@@ -2,8 +2,8 @@
 function logEachValue(values) {
   values.forEach((value, index) => {
     console.log(`Value: ${value}, index: ${index}.`)
-  })
-}
+  });
+};
 
 const makePeopleHappy = (people) => {
   people.forEach((person) => person.isHappy = true)
@@ -12,17 +12,11 @@ people = [
   { name: "Alice", isHappy: false },
   { name: "Bob", isHappy: false }
 ];
-// passThemOut(people, makePeopleHappy);
-// console.log(people);
+passThemOut(people)
+console.log(people);
 //Problem: 2
 const getEvenNumbers = (numbers) => {
-  const evens = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      evens.push(numbers[i]);
-    }
-  }
-  return evens;
+  return numbers.filter((num) => num % 2 === 0);
 };
 //Problem: 3
 const doubleEveryNumber = (numbers) => {
@@ -58,7 +52,6 @@ const myFilter = (array = [], callback) => {
   }
   return result;
 };
-
 
 //Problem: 3
 const myFind = (array, callback) => {
